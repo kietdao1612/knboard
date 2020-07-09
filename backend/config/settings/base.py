@@ -20,7 +20,7 @@ BACKEND_DIR = os.path.dirname(
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['https://kanban-demo.azurewebsites.net/']
+ALLOWED_HOSTS = ['*']
 
 # Application definition
 
