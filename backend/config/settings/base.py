@@ -21,10 +21,14 @@ BACKEND_DIR = os.path.dirname(
 DEBUG = True
 
 ALLOWED_HOSTS = ['*']
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedStaticFilesStorage'
+STATIC_HOST = os.environ.get('DJANGO_STATIC_HOST', '')
+STATIC_URL = STATIC_HOST + '/static/'
 
 # Application definition
 
 INSTALLED_APPS = [
+    "whitenoise.runserver_nostatic",
     "django.contrib.admin",
     "django.contrib.auth",
     "django.contrib.contenttypes",
@@ -46,6 +50,7 @@ INSTALLED_APPS = [
 ]
 
 MIDDLEWARE = [
+    "whitenoise.middleware.WhiteNoiseMiddleware",
     "django.contrib.sessions.middleware.SessionMiddleware",
     "django.middleware.common.CommonMiddleware",
     "django.middleware.csrf.CsrfViewMiddleware",
