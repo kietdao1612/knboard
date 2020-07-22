@@ -2,7 +2,7 @@ import os
 from .base import *
 from ..env_utils import get_env
 
-DEBUG = False
+DEBUG = True
 SECRET_KEY = get_env("DJANGO_SECRET_KEY")
 STATIC_HOST = os.environ.get('DJANGO_STATIC_HOST', '')
 STATIC_URL = get_env("DJANGO_STATIC_URL")
@@ -50,7 +50,7 @@ LOGGING = {
     "loggers": {
         "django.request": {"handlers": [], "level": "ERROR", "propagate": True,},
         "django.security.DisallowedHost": {
-            "level": "ERROR",
+            "level": os.getenv('DJANGO_LOG_LEVEL', 'INFO'),
             "handlers": ["console"],
             "propagate": True,
         },
