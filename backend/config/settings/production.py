@@ -2,9 +2,9 @@ import os
 from .base import *
 from ..env_utils import get_env
 
-DEBUG = True
+DEBUG = False
 SECRET_KEY = get_env("DJANGO_SECRET_KEY")
-STATIC_HOST = os.environ.get('DJANGO_STATIC_HOST', '')
+STATIC_HOST = os.environ.get("DJANGO_STATIC_HOST")
 STATIC_URL = get_env("DJANGO_STATIC_URL")
 STATIC_ROOT = get_env("DJANGO_STATIC_ROOT")
 ALLOWED_HOSTS = get_env("DJANGO_ALLOWED_HOSTS").split(",")
