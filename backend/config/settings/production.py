@@ -47,6 +47,10 @@ LOGGING = {
     },
     "root": {"level": "INFO", "handlers": ["console"]},
     "loggers": {
+        "django": {
+            "handlers": ['console'],
+            "level": os.getenv('DJANGO_LOG_LEVEL', 'INFO'),
+        },
         "django.request": {"handlers": [], "level": "ERROR", "propagate": True,},
         "django.security.DisallowedHost": {
             "level": "ERROR",
