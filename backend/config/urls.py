@@ -54,8 +54,8 @@ urlpatterns = [
     path("auth/setup/", AuthSetup.as_view(), name="auth-setup"),
     path("auth/guest/", GuestRegistration.as_view(), name="guest-registration"),
     path("backdoor/", admin.site.urls),
-] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
-
+] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT) + + \
+    static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
 if settings.DEBUG:
     try:
         import debug_toolbar
