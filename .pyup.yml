@@ -1,5 +1,0 @@
-# PyUp is used to keep Python dependencies secure & up-to-date
-# See https://pyup.io/docs/configuration/ for all available options
-
-update: all
-schedule: "every week"
