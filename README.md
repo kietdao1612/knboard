@@ -139,7 +139,7 @@ black --exclude .venv .
 ```
 ## Azure Instructions
 
-- Django
+- Django with Web Apps on Linux
 - React
 ## Articles
 
