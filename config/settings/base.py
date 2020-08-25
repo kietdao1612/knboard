@@ -44,7 +44,7 @@ INSTALLED_APPS = [
     "dj_rest_auth.registration",
     "django_extensions",
 ]
-
+# TODO: Investigate moving middleware to the production settings only.
 MIDDLEWARE = [
     "whitenoise.middleware.WhiteNoiseMiddleware",
     "django.contrib.sessions.middleware.SessionMiddleware",
