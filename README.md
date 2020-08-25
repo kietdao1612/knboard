@@ -139,7 +139,8 @@ black --exclude .venv .
 ```
 ## Azure Instructions
 
-- TBD
+- Django
+- React
 ## Articles
 
 - [Full Guide to Testing Javascript & React](https://www.rrebase.com/posts/full-guide-to-testing-javascript-react)
