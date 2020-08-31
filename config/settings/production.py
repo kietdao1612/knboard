@@ -7,7 +7,11 @@ SECRET_KEY = get_env("DJANGO_SECRET_KEY")
 STATIC_URL = get_env("DJANGO_STATIC_URL")
 STATIC_ROOT = get_env("DJANGO_STATIC_ROOT")
 ALLOWED_HOSTS = get_env("DJANGO_ALLOWED_HOSTS").split(",")
-
+BASE_DIR = get_env("DJANGO_BASE_DIR")
+STATICFILES_DIRS = [
+    os.path.join(BASE_DIR, "static"), 
+    os.path.join(BASE_DIR, "frontend")
+]
 # Nginx is used instead of SecurityMiddleware
 # for setting all the recommended security headers
 SILENCED_SYSTEM_CHECKS = [
