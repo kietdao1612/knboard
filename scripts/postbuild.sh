@@ -5,4 +5,3 @@ python manage.py runserver &
 
 cd /home/site/wwwroot/frontend
 yarn install
-yarn start
