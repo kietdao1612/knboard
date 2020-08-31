@@ -1,0 +1,15 @@
+{
+    "routes": [
+        {
+          "route": "/.auth/*",
+          "statusCode": "404"
+        }
+      ],
+    "platformErrorOverrides": [
+    {
+      "errorType": "NotFound",
+      "serve": "/index.html",
+      "statusCode": 200
+    }
+  ]
+}
