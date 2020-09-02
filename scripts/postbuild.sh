@@ -1,7 +1,7 @@
-cd /home/site/wwwroot/backend
+cd ./backend
 python manage.py migrate
 python manage.py loaddata avatars
 
-cd /home/site/wwwroot/frontend
+cd ./frontend
 yarn install
 yarn build
