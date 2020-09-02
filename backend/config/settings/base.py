@@ -24,8 +24,7 @@ ALLOWED_HOSTS = ['*']
 STATIC_URL = os.environ.get("DJANGO_STATIC_URL", "/static/")
 STATIC_ROOT = os.environ.get("DJANGO_STATIC_ROOT", "./static/")
 STATICFILES_DIRS = [os.path.join(FRONTEND_DIR, 'build', 'static')]
-STATICFILES_STORAGE = (
-    'whitenoise.storage.CompressedManifestStaticFilesStorage')
+STATICFILES_STORAGE = ('whitenoise.storage.CompressedManifestStaticFilesStorage')
 
 WHITENOISE_ROOT = os.path.join(FRONTEND_DIR, 'build', 'root')
 # Application definition
