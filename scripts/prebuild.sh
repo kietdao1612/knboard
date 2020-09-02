@@ -1,1 +1,1 @@
-cd /home/site/wwwroot/backend
+#cd /home/site/wwwroot/backend
