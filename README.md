@@ -89,7 +89,7 @@ python manage.py runserver
 ```
 
 The Django API is now accessible at `http://localhost:8000/api/`
-with the admin backend available at `http://localhost:8000/backdoor/`
+Note - the admin backend available at `http://localhost:8000/backdoor/`
 
 ### React
 
