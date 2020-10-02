@@ -139,9 +139,7 @@ black --exclude .venv .
 ```
 ## Azure Instructions
 
-- Django with Web Apps on Linux
-- React
-- Frontdoor
+- Django with Web Apps on Linux with React.
 
 ## Articles
 
