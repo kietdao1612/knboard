@@ -1,4 +1,4 @@
-<h1 align="center">Simple Kanban Boards</h1>
+<h1 align="center">Simple Kanban Board(s)</h1>
 
 👉 [View Live](http://knboard.com/)
 
