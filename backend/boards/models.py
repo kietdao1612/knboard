@@ -30,7 +30,7 @@ class Board(models.Model):
 
 
 class Column(SortableMixin):
-    title = models.CharField(max_length=255)
+    title = models.CharField(max_length=254)
     board = models.ForeignKey("Board", related_name="columns", on_delete=models.CASCADE)
     column_order = models.PositiveIntegerField(default=0, editable=False, db_index=True)
 
