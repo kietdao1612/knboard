@@ -20,7 +20,7 @@
 
 ## Built using a Modern stack 💎
 
-### Frontend
+### Frontend - excluded.
 
 - Typescript
 - React with functional components and hooks
