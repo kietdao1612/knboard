@@ -1,6 +1,6 @@
 cd ../frontend
-yarn install
-yarn build
+#yarn install
+#yarn build
 
 #cd ../backend
 #python manage.py migrate
