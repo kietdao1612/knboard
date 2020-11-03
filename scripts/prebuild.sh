@@ -1,2 +1,2 @@
-cd ./backend
-echo "Inside pre-build command backend directory."
+#cd ./backend
+#echo "Inside pre-build command backend directory."
